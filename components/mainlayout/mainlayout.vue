@@ -38,18 +38,6 @@ export default {
     return {
       clipped: true,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
-        },
-      ],
 
       right: true,
       rightDrawer: false,
@@ -59,6 +47,7 @@ export default {
     ...mapState({
       //   drawer: (state) => state.mainlayout.drawer,
       title: (state) => state.mainlayout.title,
+      items: (state) => state.mainlayout.items,
     }),
     // ...mapMutations({ setDrawer: 'mainlayout/set_drawer' }),
     drawer: {
@@ -66,17 +55,17 @@ export default {
         return this.$nuxt.$store.state.mainlayout.drawer
       },
       set(val) {
-        console.log(this.$nuxt.$store.state.mainlayout.drawer)
+        // console.log(this.$nuxt.$store.state.mainlayout.drawer)
 
-        console.log('new layout', val)
+        // console.log('new layout', val)
         this.$store.commit('mainlayout/set_drawer', val)
-        console.log(this.$nuxt.$store.state.mainlayout.drawer)
+        // console.log(this.$nuxt.$store.state.mainlayout.drawer)
       },
     },
   },
   mounted() {
-    console.log('state', this.$nuxt.$store.state.mainlayout.drawer)
-    console.log(this.$nuxt.$store.state.mainlayout)
+    // console.log('state', this.$nuxt.$store.state.mainlayout.drawer)
+    // console.log(this.$nuxt.$store.state.mainlayout)
   },
   methods: {
     register() {
