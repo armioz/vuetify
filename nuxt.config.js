@@ -57,6 +57,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/auth',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
@@ -70,6 +71,9 @@ export default {
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
    */
+  auth: {
+    // Options
+  },
   content: {},
   /*
    ** vuetify module configuration
