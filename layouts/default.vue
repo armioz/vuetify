@@ -12,8 +12,13 @@
 <script>
 // import { mapState } from 'vuex'
 export default {
+  middleware: ['auth'],
+  name: 'Default',
   // computed: {
   // ...mapState[('mainlayout', ['set_drawer'])],
   // },
+  async beforeDestroy() {
+    await this.$auth.logout()
+  },
 }
 </script>
