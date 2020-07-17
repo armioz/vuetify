@@ -13,7 +13,7 @@ export default {
   target: 'server',
   server: {
     port: process.env.PORT || 3000, // default: 3000
-    host: process.env.HOST || '0.0.0.0', // default: localhost
+    host: process.env.HOST || 'https://nuxtapp-login.herokuapp.com/', // default: localhost
   },
   /*
    ** Headers of the page
