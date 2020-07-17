@@ -70,7 +70,9 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: { baseURL: process.env.BASE_URL || 'http://127.0.0.1:8080' },
+  axios: {
+    baseURL: process.env.BASE_URL || 'https://express-nuxt.herokuapp.com/',
+  },
   /*
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
