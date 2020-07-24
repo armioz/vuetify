@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-main>
+    <nuxt />
   </v-app>
 </template>
 
@@ -15,4 +11,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.bg-login {
+  background-color: turquoise;
+}
+</style>
