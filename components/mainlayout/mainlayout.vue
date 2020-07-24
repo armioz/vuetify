@@ -23,8 +23,8 @@
 
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn @click="register">
-        Register
+      <v-btn @click="logout">
+        logout
       </v-btn>
     </v-app-bar>
   </div>
@@ -71,6 +71,11 @@ export default {
     register() {
       //   console.log(this.drawer)
       //   return console.log('register')
+    },
+    async logout() {
+      console.log('logout')
+      await this.$nuxt.$auth.logout()
+      this.$router.push('/login')
     },
   },
 }
