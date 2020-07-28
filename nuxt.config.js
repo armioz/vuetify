@@ -118,10 +118,10 @@ export default {
       //   dark: true,
       themes: {
         light: {
-          background: colors.grey.lighted2,
+          // background: colors.grey.lighted2,
         },
         dark: {
-          background: colors.shades.white,
+          // background: colors.shades.white,
         },
         //     dark: {
         //       primary: colors.blue.darken2,
