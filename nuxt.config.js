@@ -1,4 +1,4 @@
-// import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors'
 
 export default {
   /*
@@ -41,7 +41,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-apexchart.js', ssr: false }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -110,21 +110,30 @@ export default {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
-    // customVariables: ['~/assets/variables.scss'],
-    // theme: {
-    //   dark: true,
-    //   themes: {
-    //     dark: {
-    //       primary: colors.blue.darken2,
-    //       accent: colors.grey.darken3,
-    //       secondary: colors.amber.darken3,
-    //       info: colors.teal.lighten1,
-    //       warning: colors.amber.base,
-    //       error: colors.deepOrange.accent4,
-    //       success: colors.green.accent3,
-    //     },
-    //   },
-    // },
+    customVariables: ['~/assets/variables.scss'],
+    theme: {
+      icons: {
+        iconfront: 'md' || 'fa',
+      },
+      //   dark: true,
+      themes: {
+        light: {
+          background: colors.grey.lighted2,
+        },
+        dark: {
+          background: colors.shades.white,
+        },
+        //     dark: {
+        //       primary: colors.blue.darken2,
+        //       accent: colors.grey.darken3,
+        //       secondary: colors.amber.darken3,
+        //       info: colors.teal.lighten1,
+        //       warning: colors.amber.base,
+        //       error: colors.deepOrange.accent4,
+        //       success: colors.green.accent3,
+        //     },
+      },
+    },
   },
   /*
    ** Build configuration

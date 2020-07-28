@@ -1,6 +1,12 @@
 <template
   ><div>
-    <v-navigation-drawer v-model="drawer" :clipped="true" app>
+    <v-navigation-drawer
+      v-model="drawer"
+      dark
+      app
+      mini-variant-width="100"
+      :clipped="true"
+    >
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -73,7 +79,7 @@ export default {
       //   return console.log('register')
     },
     async logout() {
-      console.log('logout')
+      // console.log('logout')
       await this.$nuxt.$auth.logout()
       this.$router.push('/login')
     },
