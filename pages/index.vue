@@ -76,7 +76,7 @@
     <v-flex md-9>
       <v-app class="round">
         <v-container>
-          <v-flex>
+          <v-flex flex-wrap>
             <v-row no-gutter>
               <v-col cols="6" md="6">
                 <apexchart
@@ -96,7 +96,7 @@
               </v-col>
             </v-row>
           </v-flex>
-          <v-flex class="mt-12">
+          <v-flex class="mt-12" flex-wrap>
             <v-row no-gutters>
               <v-col cols="12" md="12">
                 <RealtimeApexLine
