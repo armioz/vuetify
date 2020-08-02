@@ -1,113 +1,115 @@
 <template>
-  <v-layout>
-    <v-flex md3>
-      <v-app>
-        <v-container>
-          <v-flex>
-            <v-card class="ma-5 text-center mt-8" shaped elevation="10">
-              <v-avatar class="mt-n7" size="60" elevation="10">
-                <img src="icon.png" alt="" />
-              </v-avatar>
-              <v-card-title classs="layout justify-center">
-                UserName
-              </v-card-title>
-              <v-card-subtitle classs="layout justify-center">
-                admin
-              </v-card-subtitle>
-              <v-divider></v-divider>
+  <v-layout class="d-flex flex-wrap">
+    <v-flex md3 sm6 xs12>
+      <!-- <v-app> -->
+      <v-container>
+        <v-flex>
+          <v-card class="ma-5 text-center mt-8" shaped elevation="10">
+            <v-avatar class="mt-n7" size="60" elevation="10">
+              <img src="icon.png" alt="" />
+            </v-avatar>
+            <v-card-title classs="layout justify-center">
+              UserName
+            </v-card-title>
+            <v-card-subtitle classs="layout justify-center">
+              admin
+            </v-card-subtitle>
+            <v-divider></v-divider>
+            <v-list-item>
+              <v-list-item-title>data1</v-list-item-title>
+              <v-list-item-title>data2</v-list-item-title>
+              <v-list-item-title>data3</v-list-item-title>
+            </v-list-item>
+            <v-list-item class="mt-n5">
+              <v-list-item-title>detail1</v-list-item-title>
+              <v-list-item-title>detail2</v-list-item-title>
+              <v-list-item-title>detail3</v-list-item-title>
+            </v-list-item>
+          </v-card>
+        </v-flex>
+        <v-flex>
+          <v-card class="ma-5 mt-n1" shaped elevation="10">
+            <v-list>
               <v-list-item>
-                <v-list-item-title>data1</v-list-item-title>
-                <v-list-item-title>data2</v-list-item-title>
-                <v-list-item-title>data3</v-list-item-title>
+                <v-list-item-avatar size="10" color="cyan darken-1"
+                  ><img src="icon.png" alt="" />
+                </v-list-item-avatar>
+                <v-list-item-title class="m1-n2"> name</v-list-item-title>
+                <v-list-item-subtitle>detail</v-list-item-subtitle>
               </v-list-item>
-              <v-list-item class="mt-n5">
-                <v-list-item-title>detail1</v-list-item-title>
-                <v-list-item-title>detail2</v-list-item-title>
-                <v-list-item-title>detail3</v-list-item-title>
+              <v-list-item>
+                <v-list-item-title size="10" color="cyan darken-1">
+                  <!-- <img src="icon.png" alt="" /> -->
+                  mon
+                </v-list-item-title>
+                <v-list-item-title size="10" color="cyan darken-1">
+                  <!-- <img src="icon.png" alt="" /> -->
+                  wen
+                </v-list-item-title>
+                <v-list-item-title size="10" color="cyan darken-1">
+                  <!-- <img src="icon.png" alt="" /> -->
+                  fri
+                </v-list-item-title>
+                <v-list-item-title size="10" color="cyan darken-1">
+                  <!-- <img src="icon.png" alt="" /> -->
+                  sun
+                </v-list-item-title>
               </v-list-item>
-            </v-card>
-          </v-flex>
-          <v-flex>
-            <v-card class="ma-5 mt-n1" shaped elevation="10">
-              <v-list>
-                <v-list-item>
-                  <v-list-item-avatar size="10" color="cyan darken-1"
-                    ><img src="icon.png" alt="" />
-                  </v-list-item-avatar>
-                  <v-list-item-title class="m1-n2"> name</v-list-item-title>
-                  <v-list-item-subtitle>detail</v-list-item-subtitle>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-title size="10" color="cyan darken-1">
-                    <!-- <img src="icon.png" alt="" /> -->
-                    mon
-                  </v-list-item-title>
-                  <v-list-item-title size="10" color="cyan darken-1">
-                    <!-- <img src="icon.png" alt="" /> -->
-                    wen
-                  </v-list-item-title>
-                  <v-list-item-title size="10" color="cyan darken-1">
-                    <!-- <img src="icon.png" alt="" /> -->
-                    fri
-                  </v-list-item-title>
-                  <v-list-item-title size="10" color="cyan darken-1">
-                    <!-- <img src="icon.png" alt="" /> -->
-                    sun
-                  </v-list-item-title>
-                </v-list-item>
-              </v-list>
-              <v-list two-line subheader>
-                <v-list-item>
-                  <v-list-item-avatar size="15"
-                    ><img src="icon.png" alt="" />
-                  </v-list-item-avatar>
-                  <v-list-item-content>
-                    <v-list-item-title> Admin</v-list-item-title>
-                    <v-list-item-subtitle>Hospital</v-list-item-subtitle>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list>
-            </v-card>
-          </v-flex>
-        </v-container>
-      </v-app>
+            </v-list>
+            <v-list two-line subheader>
+              <v-list-item>
+                <v-list-item-avatar size="15"
+                  ><img src="icon.png" alt="" />
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title> Admin</v-list-item-title>
+                  <v-list-item-subtitle>Hospital</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card>
+        </v-flex>
+      </v-container>
+      <!-- </v-app> -->
     </v-flex>
 
-    <v-flex md-9>
+    <v-flex md9 sm6 xs12>
       <v-app class="round">
-        <v-container>
-          <v-flex flex-wrap>
-            <v-row no-gutter>
-              <v-col cols="6" md="6">
-                <apexchart
-                  width="600"
-                  type="line"
-                  :options="options"
-                  :series="series1"
-                />
-              </v-col>
-              <v-col cols="6" md="6">
-                <apexchart
-                  width="600"
-                  type="line"
-                  :options="options"
-                  :series="series2"
-                />
-              </v-col>
-            </v-row>
-          </v-flex>
-          <v-flex class="mt-12" flex-wrap>
-            <v-row no-gutters>
-              <v-col cols="12" md="12">
-                <RealtimeApexLine
-                  id="lineChart"
-                  height="400px"
-                  :chartdata="realtimeSeries"
-                />
-              </v-col>
-            </v-row>
-          </v-flex>
-        </v-container>
+        <!-- <v-container> -->
+        <!-- <v-flex class=""> -->
+        <v-row no-gutter>
+          <v-col dense height="100%" cols="6" md="6" sm="12" xs="12">
+            1
+            <apexchart
+              width="100%"
+              type="line"
+              :options="options"
+              :series="series1"
+            />
+          </v-col>
+          <v-col dense height="100%" cols="6" md="6" sm="12" xs="12">
+            2
+            <apexchart
+              width="100%"
+              type="line"
+              :options="options"
+              :series="series2"
+            />
+          </v-col>
+        </v-row>
+        <!-- </v-flex> -->
+        <v-flex class="mt-4">
+          <v-row no-gutters>
+            <v-col cols="12" md="12">
+              <RealtimeApexLine
+                id="lineChart"
+                height="350px"
+                :chartdata="realtimeSeries"
+              />
+            </v-col>
+          </v-row>
+        </v-flex>
+        <!-- </v-container> -->
       </v-app>
     </v-flex>
   </v-layout>
@@ -166,3 +168,4 @@ export default {
   },
 }
 </script>
+<style scope></style>
